@@ -1,0 +1,414 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: Rubik;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.my-container {
+  padding: 0 25px !important;
+  width: 100%;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  padding-top: 10px;
+}
+
+.searching {
+  margin-left: 50px;
+  margin-right: auto;
+  width: 670px;
+  background: #F8FAFD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  border-radius: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.searching > form > input {
+  width: 90%;
+  background-color: transparent;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+}
+
+.searching > form > input ::-webkit-input-placeholder {
+  color: #0000000e;
+  font-size: 13px;
+}
+
+.searching > form > input :-ms-input-placeholder {
+  color: #0000000e;
+  font-size: 13px;
+}
+
+.searching > form > input ::-ms-input-placeholder {
+  color: #0000000e;
+  font-size: 13px;
+}
+
+.searching > form > input ::placeholder {
+  color: #0000000e;
+  font-size: 13px;
+}
+
+.logOut-user > button {
+  margin-left: 15px;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 23px;
+  background: #0D75FF;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+hr {
+  margin: 8px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.my-hr {
+  margin-bottom: 0;
+}
+
+.filtering-part {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filtering-part > div {
+  margin-left: 270px;
+}
+
+.filtering-part > .filtering-btn {
+  margin: 0;
+  background: #A6B0C3;
+  border: #A6B0C3;
+}
+
+.filtering-part > .filtering-btn > div {
+  margin-left: 8px;
+}
+
+.main-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.markbook {
+  height: 537px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 25%;
+  overflow-y: auto;
+  padding: 15px 15px 15px 25px;
+  border-right: 1px solid  #A6B0C3;
+}
+
+.markbook > h3 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.markbook > p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 155.6%;
+  /* or 22px */
+  color: #000000;
+}
+
+.list {
+  height: 537px;
+  overflow: auto;
+  background: #e5e5e53d;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.book-item {
+  background: white;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 13px 18px;
+  width: 280px;
+  height: 440px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.book-item .img-border {
+  background-color: #F8FAFD;
+  border-radius: 5px;
+}
+
+.book-item .book-img {
+  margin: 5px auto;
+  width: 225px;
+  height: 225px;
+  border-radius: 5px;
+}
+
+.book-item .book-text {
+  padding: 0;
+}
+
+.book-item .book-text > h4 {
+  height: 50px;
+  margin: 0;
+  font-size: 18px;
+}
+
+.book-item .book-text > p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.book-item .book-buttons > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.book-item .book-buttons .bookmark-btn, .book-item .book-buttons .more-btn, .book-item .book-buttons .read-btn {
+  border-radius: 5px;
+  border: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  padding: 10px 25px;
+  color: #000000;
+}
+
+.book-item .book-buttons .bookmark-btn {
+  background: #FFD80D;
+}
+
+.book-item .book-buttons .more-btn {
+  background: rgba(13, 117, 255, 0.05);
+  color: #0D75FF;
+}
+
+.book-item .book-buttons .read-btn {
+  color: #FFFFFF;
+  background-color: #75828A;
+}
+
+.markbook-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.markbook-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #F8FAFD;
+  padding: 15px 10px;
+  border-radius: 8px;
+  margin-bottom: 7px;
+}
+
+.markbook-item-texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.markbook-item-texts > h4 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.markbook-item-texts > p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  /* identical to box height */
+  color: #757881;
+}
+
+.myModal {
+  visibility: hidden;
+  opacity: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0000003d;
+}
+
+.myModal__content {
+  overflow: hidden;
+  margin-left: auto;
+  height: 100vh;
+  background-color: white;
+  width: 30%;
+}
+
+.myModal__content .bookTitle {
+  padding: 15px 25px;
+  padding-bottom: 5px;
+  background: #F8FAFD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.myModal__content .bookTitle > h3 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #222531;
+}
+
+.myModal__content .bookImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myModal__content .bookText {
+  padding: 15px 25px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 170.3%;
+  padding-bottom: 0;
+  /* or 22px */
+  color: #58667E;
+}
+
+.myModal__content .bookText > p {
+  margin: 0;
+}
+
+.myModal__content .bookData {
+  padding: 15px 25px;
+  padding-bottom: 0;
+}
+
+.myModal__content .bookDataItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.myModal__content .bookDataItem > p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin: 0;
+  color: #222531;
+}
+
+.myModal__content .bookDataItem > span {
+  background: rgba(13, 117, 255, 0.09);
+  border-radius: 30px;
+  padding: 5px 20px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  margin-left: 10px;
+  color: #0D75FF;
+}
+
+.modal--open {
+  opacity: 1;
+  visibility: visible;
+}
+/*# sourceMappingURL=main.min.css.map */
